@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.contact",
+      "required": true
+    }
+  }
+}

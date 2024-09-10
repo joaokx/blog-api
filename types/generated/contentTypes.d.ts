@@ -823,7 +823,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     shortDescription: Attribute.Text & Attribute.Required;
-    body: Attribute.Blocks;
+    body: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

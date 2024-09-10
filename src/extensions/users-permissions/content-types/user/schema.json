@@ -86,6 +86,9 @@
     "lastname": {
       "type": "string",
       "required": true
+    },
+    "body": {
+      "type": "richtext"
     }
   }
 }

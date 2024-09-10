@@ -778,6 +778,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     avatar: Attribute.Media<'images'> & Attribute.Required;
     firstname: Attribute.String & Attribute.Required;
     lastname: Attribute.String & Attribute.Required;
+    body: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

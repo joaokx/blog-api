@@ -778,7 +778,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     avatar: Attribute.Media<'images'> & Attribute.Required;
     firstname: Attribute.String & Attribute.Required;
     lastname: Attribute.String & Attribute.Required;
-    body: Attribute.RichText;
+    body: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -823,7 +823,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     shortDescription: Attribute.Text & Attribute.Required;
-    body: Attribute.Blocks & Attribute.Required;
+    body: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

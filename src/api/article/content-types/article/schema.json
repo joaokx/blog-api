@@ -49,8 +49,7 @@
       "required": true
     },
     "body": {
-      "type": "blocks",
-      "required": true
+      "type": "richtext"
     }
   }
 }
